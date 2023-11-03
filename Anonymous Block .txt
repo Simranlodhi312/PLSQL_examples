@@ -1,0 +1,24 @@
+
+Syntax for Anonymous Block :
+
+DECLARE
+ <Variable declaration>;
+BEGIN
+  <Executable statements>;
+
+EXCEPTION
+  <Exception handler>;
+END;
+/
+
+
+Eample:
+ DECLARE
+ a number:=10;
+ b number:=20;
+ c number;
+ BEGIN
+ c:=a+b;
+ Dbms_output.put_line('The sum of the two variables is '||c);
+ END;
+ /
